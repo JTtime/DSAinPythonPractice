@@ -1,5 +1,8 @@
 x=[2,3,4]
 
+def arr_man(arr):
+    
+
 def change_array(y):
     y[0]=90   #pass by reference so it changes original input
 
