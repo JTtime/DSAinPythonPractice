@@ -18,3 +18,16 @@ reversed_array = swap_nums(numbers_list, 0, len(numbers_list)-1)
 
 # print(numbers_list) List is passed by reference so both approach gives same answers
 print(reversed_array)
+
+
+def loop_reverse(array, l, r):
+    while r>l:
+        array[l], array[r], array[r], array[l]
+        l+=1
+        r-=1
+
+    # return array
+
+# print("loop:",loop_reverse(numbers_list, 0, len(numbers_list)-1))
+loop_reverse(numbers_list, 0, len(numbers_list)-1)
+print("loop:",numbers_list)
