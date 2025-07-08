@@ -1,4 +1,4 @@
-arr = [-2,3,-4,5,6,7,8,-9,10,11]
+arr = [-2,3,-4,5,6,7,8,9,-10,11]
 
 max=arr[0]
 head = 0
@@ -23,6 +23,30 @@ for i in range(0, len(arr)-1):
 
 
 print("max:", max)
+def maximum_of_two(a,b):
+    if a>b:
+        return a
+    else:
+        return b
+
+def kanade():
+    max_sum=0
+    current_sum=0
+    for num in arr:
+        if current_sum<0:
+            current_sum=0
+        else:
+            current_sum+=num
+            max_sum = maximum_of_two(max_sum, current_sum)
+    
+
+    print("current_sum:",max_sum)
+
+
+
+kanade()
+
+
 # print("head and tail", head, tail, arr[head:tail+1])
 
 
