@@ -1,4 +1,4 @@
-arr = [-2,3,-4,5,6,7,8,9,-10,11]
+arr = [-2,3,-4,5,6,7,8,9,-10,11,1,2,-6,-11]
 
 max=arr[0]
 head = 0
@@ -30,13 +30,13 @@ def maximum_of_two(a,b):
         return b
 
 def kanade():
-    max_sum=0
+    max_sum=float("-inf")
     current_sum=0
     for num in arr:
+        current_sum+=num
         if current_sum<0:
             current_sum=0
-        else:
-            current_sum+=num
+        else:            
             max_sum = maximum_of_two(max_sum, current_sum)
     
 
