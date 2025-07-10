@@ -7,20 +7,21 @@
 # @lc code=start
 class Solution:
     def isPalindrome(self, x: int) -> bool:
-        num = x
-        reversed_x=0
-        if x<0:
-            return False
-        while (num>0):
-            last_digit=num%10
-            num=num//10
-            reversed_x=(reversed_x*10)+last_digit
+        # num = x
+        # reversed_x=0
+        # if x<0:
+        #     return False
+        # while (num>0):
+        #     last_digit=num%10
+        #     num=num//10
+        #     reversed_x=(reversed_x*10)+last_digit
         
 
-        if reversed_x==x:
-            return True
-        else:
-            return False
+        # if reversed_x==x:
+        #     return True
+        # else:
+        #     return False
+        return str(x) == str(x)[::-1]
 
             
             
