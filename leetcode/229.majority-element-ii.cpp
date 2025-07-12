@@ -13,8 +13,7 @@ public:
         int n = nums.size();
         int candidate1=-1;
         int candidate2=-1;
-        // std::vector<int> ans(2);
-        std::vector<int> result;
+        vector<int> result;
 
         for (int i=0; i<n; i++) {
             if (count_one==0 && candidate2!=nums[i]) {
