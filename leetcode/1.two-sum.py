@@ -14,7 +14,9 @@ class Solution(object):
         """
         basket = {}
         head = 0
-        tail = 0
+        tail=0
+        
+
         for index, num in enumerate(nums):
             check_other_number=target-num
             if check_other_number in basket:
@@ -24,6 +26,18 @@ class Solution(object):
                 basket[num] = index
             
         return [head, tail]
+    
+    #Use following solution if given array is sorted
+
+        # tail = len(nums)-1
+        # while (head<tail):
+        #     if (nums[head]+nums[tail]==target):
+        #         print([head, tail])
+        #         return[head, tail]
+        #     elif ((nums[head]+nums[tail])<target):
+        #         head+=1
+        #     elif((nums[head]+nums[tail])>target):
+        #         tail=tail-1
 
         
 # @lc code=end
