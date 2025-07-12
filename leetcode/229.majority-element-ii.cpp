@@ -50,11 +50,7 @@ public:
         if (count_b>n/3) {
             result.push_back(candidate2);
         }
-
         return result;
-
-        
-        
     }
 };
 // @lc code=end
