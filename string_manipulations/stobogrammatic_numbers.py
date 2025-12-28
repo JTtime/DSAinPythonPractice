@@ -7,7 +7,9 @@ b = "808" #true
 
 c ="96269" #false
 
-d = "101" #True
+e = "128821" #True
+
+d = "168891" # true
 
 
 def check_stobo(s):
