@@ -1,3 +1,6 @@
+# https://leetcode.com/problems/strobogrammatic-number/description/
+# https://leetcode.com/problems/strobogrammatic-number-ii/description/
+
 a = "69"  #true
 
 b = "808" #true
