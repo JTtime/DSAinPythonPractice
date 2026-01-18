@@ -34,5 +34,35 @@ class Solution:
             
         
         return training(0, 3, dp)
+    
+    
+    #tabulation approach
+    
+    lass Solution:
+    def maximumPoints(self, arr):
+        # Code here
+        
+        
+            n = len(arr)
+            dp = [[-1]*4 for _ in range(n+1)]
+        
+        
+            
+            #dp[n][last] = 0   for all last ∈ {0,1,2,3}
+
+            for i in range(4):
+                dp[n][i] = 0
+            # return 0
+            
+            
+            
+            for idx in range(n-1, -1, -1):
+                for last in range(4):
+                    maxi=0
+                    for i in range(3):
+                        if i!=last:
+                            maxi = max(maxi, (dp[idx+1][i] + arr[idx][i]))
+                    dp[idx][last] = maxi
+            return dp[0][3]
             
                 
